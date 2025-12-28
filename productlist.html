@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali baba</title>
+    <link rel="stylesheet" href="./productlist.css" />
+    <!-- bootsrap cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav>
+      <div class="container navbarcontainer">
+        <!-- Top Row -->
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Left: Brand -->
+          <div class="d-flex align-items-center gap-2">
+            <a href="./index.html" style="text-decoration: none;">
+                <span class="logoofnavbar"
+              ><i class="bi bi-handbag logonav"></i
+            ></span>
+            <span class="logotext">Brand</span>
+            </a>
+          </div>
+
+          <!-- Center: Search -->
+          <form id="formofnavbar" class="d-flex w-50">
+            <input
+              class="form-control rounded-0 rounded-start inputofnavbar"
+              type="search"
+              placeholder="Search"
+              id="search-input"
+            />
+
+            <select
+              class="form-select rounded-0 selectofnavbar"
+              style="max-width: 150px"
+            >
+              <option>All category</option>
+              <option>Electronics</option>
+              <option>Fashion</option>
+              <option>Toys</option>
+              <option>Garments</option>
+              <option>Accessories</option>
+            </select>
+
+            <button
+              class="btn btn-primary searchbuttonofnavbar rounded-0 rounded-end px-4"
+            >
+              Search
+            </button>
+          </form>
+
+          <!-- Right: Icons -->
+          <div class="d-flex align-items-center gap-4 text-center">
+            <div class="rightsideicons">
+              <i class="bi bi-person-fill fs-5"></i>
+              <div class="small">Profile</div>
+            </div>
+
+            <div class="rightsideicons">
+              <i class="bi bi-chat-dots-fill fs-5"></i>
+              <div class="small">Message</div>
+            </div>
+
+            <div class="rightsideicons">
+              <i class="bi bi-heart-fill fs-5"></i>
+              <div class="small">Orders</div>
+            </div>
+
+            <div class="rightsideicons">
+              <i class="bi bi-cart-fill"></i>
+              <div class="small">My cart</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+      </div>
+      <div
+        class="d-flex justify-content-between align-items-center mt-3 bttomrowofnav"
+      >
+        <!-- Left Menu -->
+        <ul class="nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./productlist.html">
+              <i class="bi bi-list"></i> All category
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Hot offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Gift boxes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Menu item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Help</a>
+          </li>
+        </ul>
+
+        <!-- Right Options -->
+        <div class="d-flex gap-4">
+          <div>English, USD <i class="bi bi-chevron-down"></i></div>
+
+          <div>
+            Ship to
+            <span><img src="./assest/DE@2x.png" alt="Not Found" /></span>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- breadcrumbs section  -->
+    <section class="breadcrumbs container">
+      <div id="breadcrumbs"></div>
+    </section>
+    <!-- grid or flex buttons  -->
+    <div class="view-toggle container">
+      <div class="icondofgridorflex">
+        <i id="gridView" class="bi bi-grid-fill active"></i>
+        <i id="listView" class="bi bi-list"></i>
+      </div>
+      <div id="active-filters" class="d-flex gap-2 mt-2"></div>
+    </div>
+    <script src="./js/gridorflex.js"></script>
+
+    <!-- section of Products  -->
+    <section class="production-section container">
+      <div class="maincontainerofproductlists">
+        <div class="leftsideproductmenu">
+          <h6>Categories</h6>
+          <ul id="category-list" class="filter-list"></ul>
+          <button
+            id="toggleCategories"
+            class="see-more-btn toggle-btn-of-filters"
+          >
+            See more
+          </button>
+          <h6>Brands</h6>
+          <ul id="brand-list" class="filter-list"></ul>
+          <button id="toggleBrands" class="see-more-btn toggle-btn-of-filters">
+            See more
+          </button>
+          <h6>Price</h6>
+          <input type="range" id="price-filter" min="0" max="3000" step="1" />
+          <span id="price-value"></span>
+        </div>
+        <div class="productlistmain list-view" id="product-list"></div>
+      </div>
+    </section>
+
+    <div id="pagination" class="pagination"></div>
+
+    <script src="./js/allproducts.js"></script>
+    <script src="./js/renderproducts.js"></script>
+
+    <!-- subscribe section  -->
+    <section class="section-for-subscribe container-fluid">
+      <div class="maincontainerofsubscriber">
+        <h3>Subscribe on our newsletter</h3>
+        <p>
+          Get daily news on upcoming offers from many suppliers all over the
+          world
+        </p>
+        <div class="inputandbutton">
+          <i class="bi bi-envelope emailicon"></i>
+          <input type="email" placeholder="Email" />
+          <button type="button" class="subscribebtn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer-section container-fluid">
+      <div class="mainfooter row">
+        <div class="cardoneoffooter col-md-3">
+          <div class="d-flex align-items-center gap-2">
+            <span class="logoofnavbar"
+              ><i class="bi bi-handbag logonav"></i
+            ></span>
+            <span class="logotext">Brand</span>
+          </div>
+          <p>
+            Best information about the company gies here but now lorem ipsum is
+          </p>
+          <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-messenger"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        <div class="cardoneoffooter aboutsectionoffooter col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Find Us</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="cardoneoffooter col">
+          <h4>Partnership</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Find Us</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="cardoneoffooter col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Money Refund</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="cardoneoffooter col">
+          <h4>For Users</h4>
+          <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">My Orders</a></li>
+          </ul>
+        </div>
+        <div class="cardoneoffooter col">
+          <h4>Get Apps</h4>
+          <div class="imageoffooter">
+            <img src="./assest/footer/1.png" alt="Not Found" />
+            <img src="./assest/footer/2.png" alt="Not Found" />
+          </div>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <p style="opacity: 0.5">&copy; 2023 Ecommerce.</p>
+        <p style="opacity: 0.8">
+          <img src="./assest/flagofus.png" alt="Not Found" width="20%" />
+          English <i class="bi bi-chevron-up"></i>
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("wishlist")) {
+          e.target.classList.toggle("active");
+          e.target.innerHTML = e.target.classList.contains("active")
+            ? `<i class="bi bi-balloon-heart"></i>`
+            : `<i class="bi bi-heart"></i>`;
+        }
+      });
+    </script>
+    <script>
+      function renderProduct(p) {
+        productList.innerHTML += `
+  <div class="product-row">
+    <div class="product-img">
+      <img src="${p.image}">
+    </div>
+
+    <div class="product-info">
+      <h3>${p.title}</h3>
+      <div class="rating-row">
+        ${renderStars(p.rating)}
+        <span class="shipping">Free Shipping</span>
+      </div>
+      <p>${p.details}</p>
+      <a class="view-details">View details</a>
+    </div>
+
+    <div class="product-price">
+      <h4>$${p.price}</h4>
+      <button class="wishlist">♡</button>
+    </div>
+  </div>
+  `;
+      }
+    </script>
+    <!-- bootsrap javascript cdn  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for fues js  -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  </body>
+</html>

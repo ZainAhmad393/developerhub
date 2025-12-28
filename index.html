@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AliBaba</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- bootsrap cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- nav bar section  -->
+   <nav>
+  <div class="container navbarcontainer">
+
+    <!-- Top Row -->
+    <div class="d-flex align-items-center justify-content-between">
+      <!-- Left: Brand -->
+      <div class="d-flex align-items-center gap-2">
+       <a href="./index.html" style="text-decoration: none;">
+         <span class="logoofnavbar"><i class="bi bi-handbag logonav"></i></span>
+        <span class="logotext">Brand</span>
+       </a>
+      </div>
+
+      <!-- Center: Search -->
+      <form class="d-flex w-50">
+        <input class="form-control rounded-0 rounded-start inputofnavbar" type="search" placeholder="Search">
+
+        <select class="form-select rounded-0 selectofnavbar" style="max-width: 150px;">
+          <option>All category</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Toys</option>
+          <option>Garments</option>
+          <option>Accessories</option>
+        </select>
+
+        <button class="btn btn-primary searchbuttonofnavbar rounded-0 rounded-end px-4">
+          Search
+        </button>
+      </form>
+
+      <!-- Right: Icons -->
+      <div class="d-flex align-items-center gap-4 text-center">
+
+        <div class="rightsideicons">
+          <i class="bi bi-person-fill fs-5"></i>
+          <div class="small">Profile</div>
+        </div>
+        
+        <div class="rightsideicons">
+          <i class="bi bi-chat-dots-fill fs-5"></i>
+          <div class="small">Message</div>
+        </div>
+
+        <div class="rightsideicons">
+          <i class="bi bi-heart-fill fs-5"></i>
+          <div class="small">Orders</div>
+        </div>
+
+        <div class="rightsideicons">
+          <i class="bi bi-cart-fill"></i>
+          <div class="small">My cart</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Row --> 
+    
+  </div>
+  <div class="d-flex justify-content-between align-items-center mt-3 bttomrowofnav">
+      <!-- Left Menu -->
+      <ul class="nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./productlist.html">
+            <i class="bi bi-list"></i> All category
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Hot offers</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Gift boxes</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Menu item</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Help</a></li>
+      </ul>
+
+      <!-- Right Options -->
+      <div class="d-flex gap-4">
+
+        <div>
+          English, USD <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div>
+          Ship to <span><img src="./assest/DE@2x.png" alt="Not Found"></span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+      </div>
+
+    </div>
+</nav>
+<!-- hero section  -->
+<section class="herosection container">
+<div class="herosectionmain">
+<div class="leftsideofhero">
+  <ul>
+    <li><a href="./productlist.html">Automoblies</a></li>
+    <li><a href="./productlist.html">Clothes and Wear</a></li>
+    <li><a href="./productlist.html">Home Interiors</a></li>
+    <li><a href="./productlist.html">Computer and tech</a></li>
+    <li><a href="./productlist.html">Tools,equipments</a></li>
+    <li><a href="./productlist.html">Sports and Outdoor</a></li>
+    <li><a href="./productlist.html">Animal and Pets</a></li>
+    <li><a href="./productlist.html">Machinery Tools</a></li>
+    <li><a href="./productlist.html">More Category</a></li>
+  </ul>
+</div>
+<div class="centerimageofherosec">
+  <img src="./assest/herosection/hero.png" alt="Not Found" >
+  <div class="textofherosection">
+    <p>Latest trending</p>
+    <h3>Electronic Items</h3>
+    <button>Learn more</button>
+  </div>
+</div>
+<div class="rightsidecardsofhero">
+  <div class="cardone">
+    <div class="textandimgofcardone">
+      <img src="./assest/Avatar.png" alt="Not Found" width="30%" height="70px">
+     <div class="textofcardone">
+       <span>Hi,user</span>
+    <p>Let's get started</p>
+     </div>
+    </div>
+    <div class="buttonofcardone">
+      <button class="cardonejoinnowbtn">Join now</button>
+      <button class="cardoneloginbtn">Log in</button>
+    </div>
+  </div>
+  <div class="cardtwo">
+    <h2>Get US $10 off with a new supplier</h2>
+  </div>
+  <div class="cardthree">
+    <h2>Send quotes with supplier preferences</h2>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- deals and offer section  -->
+ <section class="dealsandoffersection container">
+  <div class="maindealsandoffersec">
+    <div class="leftsideofdealsandoffer">
+      <h3>Deals and Offers</h3>
+      <p>Hygiene and equipments</p>
+   <div class="clock">
+  <div class="dayd clockindealssec">
+    <p id="days">00</p>
+    <p>Days</p>
+  </div>
+  <div class="hours clockindealssec">
+    <p id="hours">00</p>
+    <p>Hour</p>
+  </div>
+  <div class="mints clockindealssec">
+    <p id="minutes">00</p>
+    <p>Min</p>
+  </div>
+  <div class="second clockindealssec">
+    <p id="seconds">00</p>
+    <p>Sec</p>
+  </div>
+</div>
+    </div>
+    <div class="rightsideofdealsadffer">
+      <div class="imageandcontent">
+        <img src="./assest/dealsandoffers/8.png" alt="smart watch">
+        <p>Smart Watches</p>
+        <p class="labelofdealsandoffers">-25%</p>
+      </div>
+      <div class="imageandcontent">
+        <img src="./assest/dealsandoffers/7.png" alt="smart watch">
+        <p>Laptops</p>
+        <p class="labelofdealsandoffers">-15%</p>
+      </div>
+      <div class="imageandcontent">
+        <img src="./assest/dealsandoffers/6.png" alt="smart watch">
+        <p>GoPros Cameras</p>
+        <p class="labelofdealsandoffers">-40%</p>
+      </div>
+      <div class="imageandcontent">
+        <img src="./assest/dealsandoffers/5.png" alt="smart watch">
+        <p>Headphones</p>
+        <p class="labelofdealsandoffers">-25%</p>
+      </div>
+      <div class="imageandcontent">
+        <img src="./assest/dealsandoffers/3.png" alt="smart watch">
+        <p>Canon Cameras </p>
+        <p class="labelofdealsandoffers">-25%</p>
+      </div>
+    </div>
+  </div>
+ </section>
+<!-- section of home and outdoor  -->
+<section class="category-section container">
+  <div class="main-card">
+    <div id="banner-side">
+      <div class="banner-content">
+        <h3>Home and <br> outdoor</h3>
+        <button class="sourcenowbtn">Source now</button>
+      </div>
+    </div>
+
+    <div class="items-grid">
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Soft chairs</h4>
+          <p>From <br><span>USD 19</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/chair.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Modern Lamp</h4>
+          <p>From <br><span>USD 39</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/lamp.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Swimming Bed</h4>
+          <p>From <br><span>USD 299</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/poolbed.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Kitchen Dishes</h4>
+          <p>From <br><span>USD 120</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/3.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Kitchen Mixer</h4>
+          <p>From <br><span>USD 150</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/9.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Blenders </h4>
+          <p>From <br><span>USD 199</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/8.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Home appliance</h4>
+          <p>From <br><span>USD 59</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/7.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Indoor Plants</h4>
+          <p>From <br><span>USD 99</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/4.png" alt="Chair">
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- section of consumer electronics and gadet  -->
+<section class="category-section container">
+  <div class="main-card">
+    <div class="banner-side">
+      <div id="banner-content-ofelectronics">
+        <h3>Consumer <br> electronics and gadgets</h3>
+        <button class="sourcenowbtn">Source now</button>
+      </div>
+    </div>
+
+    <div class="items-grid">
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Smart Watches</h4>
+          <p>From <br><span>USD 19</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/smartwatch.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4> Camera  </h4>
+          <p>From <br><span>USD 39</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/6.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Headphones</h4>
+          <p>From <br><span>USD 299</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/5.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Electric Kattel</h4>
+          <p>From <br><span>USD 120</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/10.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Gaming Headphones</h4>
+          <p>From <br><span>USD 150</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/5.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Laptops and PC </h4>
+          <p>From <br><span>USD 199</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/laptop.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Smart Phones</h4>
+          <p>From <br><span>USD 59</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/2.png" alt="Chair">
+        </div>
+      </div>
+      <div class="item-card">
+        <div class="text-info">
+          <h4>Smart Devices</h4>
+          <p>From <br><span>USD 99</span></p>
+        </div>
+        <div class="item-img">
+          <img src="./assest/home and outdoor/imagesofhomeandoutdoor/1.png" alt="Chair">
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- request and quote of service  -->
+ <section class="section-of-quoteandrequest container ">
+  <div class="maincontainerofrequestandquoteofservice ">
+    <div class="leftsidecontentofrequestandquote">
+      <h3>
+        An easy way to send <br> requests to all suppliers
+      </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="rightsidecontentofrequestandquote">
+      <form action="" method="post">
+      <h3>Send quote to suppliers</h3>  
+      <label for="needd">
+        What item you need?
+      </label>
+      <textarea name="tellmore" id="tellmore">Type more details</textarea>
+     <div class="quantityandselect">
+       <label for="quanitity"  class="quanititylabel">Quantity</label>
+      <select name="quantity" id="quantity">
+        <option value="pcs">pcs</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+     </div>
+      <button type="submit" class="sendinquirybtn">Send Inquiry</button>
+      </form>
+    </div>
+    <img src="./assest/Mask group.png" alt="Not Found">
+  </div>
+ </section>
+ <!-- section of recommendation  -->
+  <section class="section-of-recommendation container">
+    <h3>Recommended items</h3>
+    <div class="maincontainerofrecommendation">
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/1.png" alt="">
+        <h5>$10.30</h5>
+        <p>T-Shirts with multiple colors, for men </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/7.png" alt="">
+        <h5>$14.30</h5>
+        <p>Dress Coat for men blue color </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/jacket.png" alt="">
+        <h5>$12.30</h5>
+        <p>Brown winter coat medium size </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/5.png" alt="">
+        <h5>$14.30</h5>
+        <p>Jeans bag for travel for men's (sky blue) </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/6.png" alt="">
+        <h5>$15.30</h5>
+        <p>Leather wallet  for men's (blue)</p>
+      </div>
+    </div>
+    <div class="maincontainerofrecommendation">
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/4.png" alt="not found">
+        <h5>$9.99</h5>
+        <p>Jeans shorts for men blue color </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/9.png" alt="not found">
+        <h5>$14.30</h5>
+        <p>Headset for gaming with mic </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/5.png" alt="not found">
+        <h5>$12.30</h5>
+        <p>jeans bag for travel for men's (sky blue) </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/3.png" alt="Not Found">
+        <h5>$14.30</h5>
+        <p>Handmade clay pot, ideal for storing water </p>
+      </div>
+      <div class="cardofimageandcontent">
+        <img src="./assest/recommendation images/10.png" alt="Not Found">
+        <h5>$15.30</h5>
+        <p>Electric Kattel for Kitchen usage</p>
+      </div>
+    </div>
+  </section>
+  <!-- extra services section  -->
+   <section class="extra-services-section container">
+    <h3>Our extra services</h3>
+    <div class="mainextraservicessection">
+      <div class="extraservicescards">
+        <img src="./assest/extraservices/4.png" alt="Not Founds">
+        <span class="overlayfordarkness"></span>
+        <i class="bi bi-search"></i>
+        <p>Source from  <br> Industry Hubs</p>
+      </div>
+      <div class="extraservicescards">
+        <img src="./assest/extraservices/2.png" alt="Not Founds">
+        <span class="overlayfordarkness"></span>
+        <i class="bi bi-archive"></i>
+        <p>Customize Your <br> Products</p>
+      </div>
+      <div class="extraservicescards">
+        <img src="./assest/extraservices/1.png" alt="Not Founds">
+        <span class="overlayfordarkness"></span>
+        <i class="bi bi-send"></i>
+        <p>Fast, reliable shipping <br> by ocean or air</p>
+      </div>
+      <div class="extraservicescards">
+        <img src="./assest/extraservices/3.png" alt="Not Founds">
+        <span class="overlayfordarkness"></span>
+        <i class="bi bi-shield"></i> 
+        <p>Product monitoring <br> and inspection</p>
+      </div>
+    </div>
+   </section>
+   <!-- supplirs origion section  -->
+    <section class="suppliers-section container">
+      <h3>Suppliers by region</h3>
+      <div class="maincontainerofsupplier-section">
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/emirates.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>Arabic Emirates</h5>
+            <a href="">shopname.ae</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/austrailia.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>Australia</h5>
+            <a href="">shopname.ae</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/us.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>United States</h5>
+            <a href="">shopname.ae</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/russia.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>Russia</h5>
+            <a href="">shopname.ru</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/italy.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>Italy </h5>
+            <a href="">shopname.it</a>
+          </div>
+        </div>
+      </div>
+      <div class="maincontainerofsupplier-section">
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/denmark.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>Denmark</h5>
+            <a href="">denmark.com.dk</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/france (2).png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>France</h5>
+            <a href="">shopname.com.fr</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/emirates.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5> Emirates</h5>
+            <a href="">shopname.ae</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/china.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5>China</h5>
+            <a href="">shopname.ae</a>
+          </div>
+        </div>
+        <div class="cardsofsupplierofregion">
+          <img src="./assest/regions/great baritan.png" alt="Not Found">
+          <div class="textofsuppliercard">
+            <h5> Britian </h5>
+            <a href="">shopname.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe section  -->
+     <section class="section-for-subscribe container-fluid">
+      <div class="maincontainerofsubscriber">
+      <h3>Subscribe on our newsletter</h3>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <div class="inputandbutton">
+        <i class="bi bi-envelope emailicon"></i>
+        <input type="email" placeholder="Email" > 
+        <button type="button" class="subscribebtn">Subscribe</button>
+      </div>
+      </div>
+     </section>
+     <!-- footer section -->
+      <footer class="footer-section container-fluid">
+        <div class="mainfooter row">
+          <div class="cardoneoffooter col-md-3">
+             <div class="d-flex align-items-center gap-2">
+        <span class="logoofnavbar"><i class="bi bi-handbag logonav"></i></span>
+        <span class="logotext">Brand</span>
+      </div>
+      <p>Best information about the company gies here but now lorem ipsum is</p>
+      <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-messenger"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+          </div>
+          <div class="cardoneoffooter aboutsectionoffooter col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Find Us</a></li>
+              <li><a href="">Categories</a></li>
+              <li><a href="">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="cardoneoffooter col">
+            <h4>Partnership</h4>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Find Us</a></li>
+              <li><a href="">Categories</a></li>
+              <li><a href="">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="cardoneoffooter col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Money Refund</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="cardoneoffooter col">
+            <h4>For Users</h4>
+            <ul>
+              <li><a href="">Login</a></li>
+              <li><a href="">Register</a></li>
+              <li><a href="">Settings</a></li>
+              <li><a href="">My Orders</a></li>
+            </ul>
+          </div>
+          <div class="cardoneoffooter col">
+            <h4>Get Apps</h4>
+            <div class="imageoffooter">
+              <img src="./assest/footer/1.png" alt="Not Found">
+              <img src="./assest/footer/2.png" alt="Not Found">
+            </div>
+          </div>
+        </div>
+        <div class="footerbottom">
+          <p style="opacity: 0.5;">&copy; 2023 Ecommerce. </p>
+          <p style="opacity: 0.8;"><img src="./assest/flagofus.png" alt="Not Found" width="20%">
+          English <i class="bi bi-chevron-up"></i></p>
+        </div>
+      </footer>
+ <!-- for clock js file  -->
+ <script src="./js/clock.js"></script>
+    <!-- bootsrap javascript cdn  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
